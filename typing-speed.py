@@ -20,5 +20,5 @@ speed = after - before
 seconds = round(speed.total_seconds(),2)
 letter_per_second = round(len(text) / seconds, 1)
 
-print(f'You typed in : {format(seconds)} second')
+print(f'You typed in : {seconds} second')
 print(f'Your speed is: {letter_per_second} letters per second')
