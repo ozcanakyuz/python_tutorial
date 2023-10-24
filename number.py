@@ -32,8 +32,16 @@ while True:
         print(f'Kalan hakkiniz: {hak}')
         print('------------------------')
     if hak == 0:
-        print('Hak kalmadi! Yeniden oyna? (E/H)')
+        print('Hak kalmadi!')
+        answer = input('Yeniden oyna? (E/H): ')
         print('*******************************')
-        break
+        if (answer == 'H'):
+            print('Oyun bitti!')
+            break
+        elif (answer == 'h'):
+            print('Oyun bitti!')
+            break
+        else:
+            print('---------------------------')
     sayac += 1    
 
