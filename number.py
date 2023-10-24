@@ -2,7 +2,7 @@ import random
 import time
 
 random_sayi = random.randint(1,10)
-
+sayac = 1
 hak = 5
 
 while True:
@@ -12,7 +12,7 @@ while True:
         print('Kontrol ediliyor...')
         time.sleep(1)
         print('***********************')
-        print(f'TEBRIKLER!! BILDINIZ.')
+        print(f'TEBRIKLER!! {sayac}. DENEMEDE BILDINIZ.')
         print('***********************')
         break
     elif (sayi > random_sayi):
@@ -34,5 +34,6 @@ while True:
     if hak == 0:
         print('Hak kalmadi! Yeniden oyna? (E/H)')
         print('*******************************')
-        break    
+        break
+    sayac += 1    
 
